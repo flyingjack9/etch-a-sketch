@@ -8,54 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body onload="javascript:test()">
+<body onload="javascript:initiateSketchBoard()">
     <div class="header">
         <h1>Etch-a-sketch</h1>
     </div>
 
     <div class="options-menu">
-        <button type="reset">Reset</button>
-        <button type="button">Black</button>
-        <button type="button">Rainbow</button>
-        <button type="button">Random</button>
+        <button id="reset" type="button">Reset</button>
+        <button id="eraser" type="button">Eraser</button>
+        <button id="black" type="button">Black</button>
+        <button id="rainbow" type="button">Rainbow</button>
+        <button id="random" type="button">Random</button>
+        <button id="changeSize" type="button">Change size</button>
 
     </div>
-    <div id="sketch-panel">
-        <!-- <div class="row">
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-        </div>
-        <div class="row">
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-        </div>
-        <div class="row">
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-        </div>
-        <div class="row">
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-        </div>
-        <div class="row">
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-            <div class="grid-square"></div>
-        </div> -->
-    </div>
+    <div id="sketch-panel"></div>
 </body>
 </html>

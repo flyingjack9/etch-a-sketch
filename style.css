@@ -24,8 +24,9 @@ body {
 }
 
 .grid-square {
-    /* width: 20%;
-    padding-bottom: 20%; */
     background: greenyellow;
-    /* border:  2px solid black; */
+}
+
+.grid-square:hover {
+    background-color: black;
 }
