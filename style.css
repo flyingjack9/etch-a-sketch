@@ -1,13 +1,92 @@
 html {
     font-size: 10px;
-    font-family: Roboto, sans-serif;
-    background-color: rgba(0, 0, 0, 0.13);
+    font-family: "JetBrains Mono", sans-serif;
+    color: white;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 2em;
+}
+
+button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.header {
+    transform: (-50%, -50%);
+    border: rgb(76, 76, 167) dashed 6px;
+    border-radius: 6px;
+    padding: 0 4em 0 4em;
+}
+
+.header h1 {
+    font-family: "JetBrains Mono",monospace;
+    font-size: 4em;
+    color: rgba(255, 255, 255, .1);
+    background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes colorchange {
+    0% {
+        background-position: right 0px bottom 0px;
+    }
+    100% {
+        background-position: right 10em bottom 0px;
+    }
+}
+
+.options-menu {
+    padding: 2rem;
 }
 
 #sketch-panel {
@@ -17,6 +96,8 @@ body {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    border: 0.5vh rgb(76, 76, 167) solid;
+    border-radius: 0.5rem;
 }
 
 .row {
@@ -24,9 +105,9 @@ body {
 }
 
 .grid-square {
-    background: greenyellow;
+    background: white;
 }
 
-.grid-square:hover {
-    background-color: black;
+.footer {
+    padding: 2em 0 2em 0;
 }

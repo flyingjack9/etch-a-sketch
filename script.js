@@ -18,7 +18,7 @@ let randomColor;
 grid.addEventListener("mouseover", function(event) {
     switch (currentPenColor) {
         case "eraser":
-            event.target.style.backgroundColor = "greenyellow";
+            event.target.style.backgroundColor = "white";
             break;
 
         case "black":
@@ -82,8 +82,8 @@ function createGrid() {
 }
 
 function getGridSize() {
-    gridSize = prompt("Please enter a number between 1 - 100 for the size of the grid : ");
-    if (gridSize <= 0 || gridSize > 100) {
+    gridSize = prompt("Please enter a number between 1 - 200 for the size of the grid (100 is recommended) : ");
+    if (gridSize <= 0 || gridSize > 200) {
         alert("Invalid entry, please try again!");
         getGridSize();
     }
@@ -106,6 +106,6 @@ function generateRandomRGB() {
 function resetGrid() {
     let gridSquares = document.getElementsByClassName("grid-square");
     for (let i = 0; i < gridSquares.length; i++) {
-        gridSquares[i].style.backgroundColor = "greenyellow";
+        gridSquares[i].style.backgroundColor = "white";
     }
 }
